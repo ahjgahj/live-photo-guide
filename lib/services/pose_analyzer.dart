@@ -1,1 +1,88 @@
--b aW1wb3J0ICdwYWNrYWdlOmdvb2dsZV9tbGtpdF9wb3NlX2RldGVjdGlvbi9nb29nbGVfbWxraXRfcG9zZV9kZXRlY3Rpb24uZGFydCc7CgpjbGFzcyBBbmFseXNpc1Jlc3VsdCB7CiAgZmluYWwgYm9vbCBpc1BlcmZlY3Q7CiAgZmluYWwgU3RyaW5nPyBzdWdnZXN0aW9uOwogIGZpbmFsIGJvb2wgZmFjZVRvb0Rhcms7CiAgZmluYWwgYm9vbCBiYWRBbmdsZTsKICBmaW5hbCBib29sIG9mZkdvbGRlblBvaW50OwoKICBBbmFseXNpc1Jlc3VsdCh7CiAgICByZXF1aXJlZCB0aGlzLmlzUGVyZmVjdCwKICAgIHRoaXMuc3VnZ2VzdGlvbiwKICAgIHRoaXMuZmFjZVRvb0RhcmsgPSBmYWxzZSwKICAgIHRoaXMuYmFkQW5nbGUgPSBmYWxzZSwKICAgIHRoaXMub2ZmR29sZGVuUG9pbnQgPSBmYWxzZSwKICB9KTsKCiAgc3RhdGljIEFuYWx5c2lzUmVzdWx0IHBlcmZlY3QoKSB7CiAgICByZXR1cm4gQW5hbHlzaXNSZXN1bHQoaXNQZXJmZWN0OiB0cnVlKTsKICB9Cn0KCmNsYXNzIFBvc2VBbmFseXplciB7CiAgLy8vIOWIhuaekOWnv+aAge+8jOi/lOWbniBBbmFseXNpc1Jlc3VsdAogIEFuYWx5c2lzUmVzdWx0IGFuYWx5emUoUG9zZSBwb3NlLCBkb3VibGUgaW1hZ2VXaWR0aCwgZG91YmxlIGltYWdlSGVpZ2h0KSB7CiAgICBmaW5hbCBub3NlID0gcG9zZS5sYW5kbWFya3NbUG9zZUxhbmRtYXJrVHlwZS5ub3NlXTsKCiAgICBpZiAobm9zZSA9PSBudWxsKSB7CiAgICAgIHJldHVybiBBbmFseXNpc1Jlc3VsdChpc1BlcmZlY3Q6IGZhbHNlKTsKICAgIH0KCiAgICAvLyDlhYnnur/mj5DphpLvvIjkvJjlhYjnuqfmnIDpq5jvvIkKICAgIGlmIChub3NlLnogPCAtMC4yNSkgewogICAgICByZXR1cm4gQW5hbHlzaXNSZXN1bHQoCiAgICAgICAgaXNQZXJmZWN0OiBmYWxzZSwKICAgICAgICBmYWNlVG9vRGFyazogdHJ1ZSwKICAgICAgICBzdWdnZXN0aW9uOiAn5YWJ57q/5pyJ54K55pqX77yM56iN5b6u6L+O552A5YWJ5LiA54K577yM6K6p6IS46YOo5pu06YCa6YCP44CCJywKICAgICAgKTsKICAgIH0KCiAgICAvLyDop5Lluqblu7rorq4KICAgIGZpbmFsIG5vc2VZUmF0aW8gPSBub3NlLnkgLyBpbWFnZUhlaWdodDsKICAgIGlmIChub3NlWVJhdGlvIDwgMC4xOCkgewogICAgICByZXR1cm4gQW5hbHlzaXNSZXN1bHQoCiAgICAgICAgaXNQZXJmZWN0OiBmYWxzZSwKICAgICAgICBiYWRBbmdsZTogdHJ1ZSwKICAgICAgICBzdWdnZXN0aW9uOiAn56iN5b6u6LCD5pW05LiA5LiL6ZWc5aS06KeS5bqm77yM5bmz6KeG5Lya6K6p55S76Z2i5pu05pyJ5Lqy5ZKM5Yqb44CCJywKICAgICAgKTsKICAgIH0KICAgIGlmIChub3NlWVJhdGlvID4gMC43MCkgewogICAgICByZXR1cm4gQW5hbHlzaXNSZXN1bHQoCiAgICAgICAgaXNQZXJmZWN0OiBmYWxzZSwKICAgICAgICBiYWRBbmdsZTogdHJ1ZSwKICAgICAgICBzdWdnZXN0aW9uOiAn56iN5b6u6LCD5pW05LiA5LiL6ZWc5aS06KeS5bqm77yM5bmz6KeG5Lya6K6p55S76Z2i5pu05pyJ5Lqy5ZKM5Yqb44CCJywKICAgICAgKTsKICAgIH0KCiAgICAvLyDkuInliIbms5XmnoTlm74KICAgIGZpbmFsIG5vc2VYUmF0aW8gPSBub3NlLnggLyBpbWFnZVdpZHRoOwogICAgZmluYWwgaW5Hb2xkZW5MZWZ0ID0gbm9zZVhSYXRpbyA+PSAwLjI4ICYmIG5vc2VYUmF0aW8gPD0gMC4zODsKICAgIGZpbmFsIGluR29sZGVuUmlnaHQgPSBub3NlWFJhdGlvID49IDAuNjIgJiYgbm9zZVhSYXRpbyA8PSAwLjcyOwogICAgaWYgKCFpbkdvbGRlbkxlZnQgJiYgIWluR29sZGVuUmlnaHQpIHsKICAgICAgcmV0dXJuIEFuYWx5c2lzUmVzdWx0KAogICAgICAgIGlzUGVyZmVjdDogZmFsc2UsCiAgICAgICAgb2ZmR29sZGVuUG9pbnQ6IHRydWUsCiAgICAgICAgc3VnZ2VzdGlvbjogJ+WwneivleWwhuS4u+S9k+aUvuWcqOeUu+mdoueahOS4ieWIhuS5i+S4gOWkhO+8jOaehOWbvuS8muabtOeUn+WKqOWTpuOAgicsCiAgICAgICk7CiAgICB9CgogICAgLy8g6IKp6IaA6KeS5bqm5qOA5rWL77yI5Y6f5pyJ6YC76L6R5L+d55WZ77yJCiAgICBmaW5hbCBsZWZ0U2hvdWxkZXIgPSBwb3NlLmxhbmRtYXJrc1tQb3NlTGFuZG1hcmtUeXBlLmxlZnRTaG91bGRlcl07CiAgICBmaW5hbCByaWdodFNob3VsZGVyID0gcG9zZS5sYW5kbWFya3NbUG9zZUxhbmRtYXJrVHlwZS5yaWdodFNob3VsZGVyXTsKICAgIGlmIChsZWZ0U2hvdWxkZXIgIT0gbnVsbCAmJiByaWdodFNob3VsZGVyICE9IG51bGwpIHsKICAgICAgZmluYWwgZHkgPSAocmlnaHRTaG91bGRlci55IC0gbGVmdFNob3VsZGVyLnkpLmFicygpOwogICAgICBmaW5hbCBkeCA9IChyaWdodFNob3VsZGVyLnggLSBsZWZ0U2hvdWxkZXIueCkuYWJzKCk7CiAgICAgIGZpbmFsIGFuZ2xlID0gKGR5IC8gKGR4ICsgMC4wMDEpKSAqIDE4MCAvIDMuMTQxNTk7CiAgICAgIGlmIChhbmdsZSA+IDEyKSB7CiAgICAgICAgcmV0dXJuIEFuYWx5c2lzUmVzdWx0KAogICAgICAgICAgaXNQZXJmZWN0OiBmYWxzZSwKICAgICAgICAgIHN1Z2dlc3Rpb246ICfogqnohoDmlL7mnb7kuIDngrnvvIzoh6rnhLbnmoTnirbmgIHmnIDkuIrplZzjgIInLAogICAgICAgICk7CiAgICAgIH0KICAgIH0KCiAgICAvLyDlhajpg6jpgJrov4fliJnkuLrlroznvo4KICAgIHJldHVybiBBbmFseXNpc1Jlc3VsdC5wZXJmZWN0KCk7CiAgfQp9Cg==
+import 'package:google_mlkit_pose_detection/google_mlkit_pose_detection.dart';
+
+class AnalysisResult {
+  final bool isPerfect;
+  final String? suggestion;
+  final bool faceTooDark;
+  final bool badAngle;
+  final bool offGoldenPoint;
+
+  AnalysisResult({
+    required this.isPerfect,
+    this.suggestion,
+    this.faceTooDark = false,
+    this.badAngle = false,
+    this.offGoldenPoint = false,
+  });
+
+  static AnalysisResult perfect() {
+    return AnalysisResult(isPerfect: true);
+  }
+}
+
+class PoseAnalyzer {
+  /// 分析姿态，返回 AnalysisResult
+  AnalysisResult analyze(Pose pose, double imageWidth, double imageHeight) {
+    final nose = pose.landmarks[PoseLandmarkType.nose];
+
+    if (nose == null) {
+      return AnalysisResult(isPerfect: false);
+    }
+
+    // 光线提醒（优先级最高）
+    if (nose.z < -0.25) {
+      return AnalysisResult(
+        isPerfect: false,
+        faceTooDark: true,
+        suggestion: '光线有点暗，稍微迎着光一点，让脸部更通透。',
+      );
+    }
+
+    // 角度建议
+    final noseYRatio = nose.y / imageHeight;
+    if (noseYRatio < 0.18) {
+      return AnalysisResult(
+        isPerfect: false,
+        badAngle: true,
+        suggestion: '稍微调整一下镜头角度，平视会让画面更有亲和力。',
+      );
+    }
+    if (noseYRatio > 0.70) {
+      return AnalysisResult(
+        isPerfect: false,
+        badAngle: true,
+        suggestion: '稍微调整一下镜头角度，平视会让画面更有亲和力。',
+      );
+    }
+
+    // 三分法构图
+    final noseXRatio = nose.x / imageWidth;
+    final inGoldenLeft = noseXRatio >= 0.28 && noseXRatio <= 0.38;
+    final inGoldenRight = noseXRatio >= 0.62 && noseXRatio <= 0.72;
+    if (!inGoldenLeft && !inGoldenRight) {
+      return AnalysisResult(
+        isPerfect: false,
+        offGoldenPoint: true,
+        suggestion: '尝试将主体放在画面的三分之一处，构图会更生动哦。',
+      );
+    }
+
+    // 肩膀角度检测（原有逻辑保留）
+    final leftShoulder = pose.landmarks[PoseLandmarkType.leftShoulder];
+    final rightShoulder = pose.landmarks[PoseLandmarkType.rightShoulder];
+    if (leftShoulder != null && rightShoulder != null) {
+      final dy = (rightShoulder.y - leftShoulder.y).abs();
+      final dx = (rightShoulder.x - leftShoulder.x).abs();
+      final angle = (dy / (dx + 0.001)) * 180 / 3.14159;
+      if (angle > 12) {
+        return AnalysisResult(
+          isPerfect: false,
+          suggestion: '肩膀放松一点，自然的状态最上镜。',
+        );
+      }
+    }
+
+    // 全部通过则为完美
+    return AnalysisResult.perfect();
+  }
+}
