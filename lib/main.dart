@@ -1,1 +1,27 @@
--b aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpmbHV0dGVyL3NlcnZpY2VzLmRhcnQnOwppbXBvcnQgJ3BhY2thZ2U6bGl2ZV9waG90b19ndWlkZS9wYWdlcy9ob21lX3BhZ2UuZGFydCc7CmltcG9ydCAncGFja2FnZTpsaXZlX3Bob3RvX2d1aWRlL3BhZ2VzL2NhbWVyYV9wYWdlLmRhcnQnOwoKdm9pZCBtYWluKCkgewogIFdpZGdldHNGbHV0dGVyQmluZGluZy5lbnN1cmVJbml0aWFsaXplZCgpOwogIFN5c3RlbUNocm9tZS5zZXRQcmVmZXJyZWRPcmllbnRhdGlvbnMoW0RldmljZU9yaWVudGF0aW9uLnBvcnRyYWl0VXBdKTsKICBydW5BcHAoY29uc3QgTGl2ZVBob3RvR3VpZGVBcHAoKSk7Cn0KCmNsYXNzIExpdmVQaG90b0d1aWRlQXBwIGV4dGVuZHMgU3RhdGVsZXNzV2lkZ2V0IHsKICBjb25zdCBMaXZlUGhvdG9HdWlkZUFwcCh7c3VwZXIua2V5fSk7CgogIEBvdmVycmlkZQogIFdpZGdldCBidWlsZChCdWlsZENvbnRleHQgY29udGV4dCkgewogICAgcmV0dXJuIE1hdGVyaWFsQXBwKAogICAgICB0aXRsZTogJ+aRhOW9seWkp+W4iCcsCiAgICAgIHRoZW1lOiBUaGVtZURhdGEuZGFyaygpLmNvcHlXaXRoKHNjYWZmb2xkQmFja2dyb3VuZENvbG9yOiBDb2xvcnMuYmxhY2spLAogICAgICBob21lOiBjb25zdCBIb21lUGFnZSgpLAogICAgICBkZWJ1Z1Nob3dDaGVja2VkTW9kZUJhbm5lcjogZmFsc2UsCiAgICAgIHJvdXRlczogewogICAgICAgICcvY2FtZXJhJzogKGNvbnRleHQpID0+IGNvbnN0IENhbWVyYVBhZ2UoKSwKICAgICAgfSwKICAgICk7CiAgfQp9Cg==
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:live_photo_guide/pages/home_page.dart';
+import 'package:live_photo_guide/pages/camera_page.dart';
+
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  runApp(const LivePhotoGuideApp());
+}
+
+class LivePhotoGuideApp extends StatelessWidget {
+  const LivePhotoGuideApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: '摄影大师',
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black),
+      home: const HomePage(),
+      debugShowCheckedModeBanner: false,
+      routes: {
+        '/camera': (context) => const CameraPage(),
+      },
+    );
+  }
+}
