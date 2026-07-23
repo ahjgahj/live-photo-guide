@@ -1,1 +1,59 @@
--b aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXJfdHRzL2ZsdXR0ZXJfdHRzLmRhcnQnOwppbXBvcnQgJ2RhcnQ6YXN5bmMnOwoKY2xhc3MgVm9pY2VDb2FjaFNlcnZpY2UgewogIGxhdGUgRmx1dHRlclR0cyBfZmx1dHRlclR0czsKICBib29sIF9pbml0aWFsaXplZCA9IGZhbHNlOwoKICAvLyDpmLLmipbliqjvvJrorrDlvZXmr4/np43mtojmga/nmoTmnIDlkI7mkq3miqXml7bpl7QKICBmaW5hbCBNYXA8U3RyaW5nLCBEYXRlVGltZT4gX2xhc3RTcGVha01hcCA9IHt9OwoKICAvLyDmr4/liIbpkp/mnIDlpJogOCDmnaEKICBmaW5hbCBMaXN0PERhdGVUaW1lPiBfc3BlYWtUaW1lc3RhbXBzID0gW107CiAgc3RhdGljIGNvbnN0IGludCBfbWF4UGVyTWludXRlID0gODsKICBzdGF0aWMgY29uc3QgRHVyYXRpb24gX2RlYm91bmNlU2FtZU1lc3NhZ2UgPSBEdXJhdGlvbihzZWNvbmRzOiA1KTsKCiAgRnV0dXJlPHZvaWQ+IGluaXRpYWxpemUoKSBhc3luYyB7CiAgICBfZmx1dHRlclR0cyA9IEZsdXR0ZXJUdHMoKTsKICAgIGF3YWl0IF9mbHV0dGVyVHRzLnNldExhbmd1YWdlKCJ6aC1DTiIpOwogICAgYXdhaXQgX2ZsdXR0ZXJUdHMuc2V0U3BlZWNoUmF0ZSgwLjU1KTsKICAgIGF3YWl0IF9mbHV0dGVyVHRzLnNldFBpdGNoKDEuMCk7CiAgICBhd2FpdCBfZmx1dHRlclR0cy5zZXRWb2x1bWUoMC45KTsKICAgIF9pbml0aWFsaXplZCA9IHRydWU7CiAgfQoKICAvLy8g5pKt5oql5Y+N6aaI5raI5oGv77yM5bim6Ziy5oqW5Yqo5ZKM6aKR546H6ZmQ5Yi2CiAgRnV0dXJlPHZvaWQ+IHNwZWFrRmVlZGJhY2soU3RyaW5nIG1lc3NhZ2UpIGFzeW5jIHsKICAgIGlmICghX2luaXRpYWxpemVkKSByZXR1cm47CgogICAgZmluYWwgbm93ID0gRGF0ZVRpbWUubm93KCk7CgogICAgLy8g6Ziy5oqW5Yqo77ya5ZCM5LiA56eN5raI5oGv6Iez5bCR6Ze06ZqUIDUg56eSCiAgICBpZiAoX2xhc3RTcGVha01hcC5jb250YWluc0tleShtZXNzYWdlKSkgewogICAgICBpZiAobm93LmRpZmZlcmVuY2UoX2xhc3RTcGVha01hcFttZXNzYWdlXSEpIDwgX2RlYm91bmNlU2FtZU1lc3NhZ2UpIHsKICAgICAgICByZXR1cm47CiAgICAgIH0KICAgIH0KCiAgICAvLyDmr4/liIbpkp/kuIrpmZDmo4Dmn6UKICAgIF9zcGVha1RpbWVzdGFtcHMucmVtb3ZlV2hlcmUoCiAgICAgICh0KSA9PiBub3cuZGlmZmVyZW5jZSh0KSA+IGNvbnN0IER1cmF0aW9uKG1pbnV0ZXM6IDEpLAogICAgKTsKICAgIGlmIChfc3BlYWtUaW1lc3RhbXBzLmxlbmd0aCA+PSBfbWF4UGVyTWludXRlKSByZXR1cm47CgogICAgX2xhc3RTcGVha01hcFttZXNzYWdlXSA9IG5vdzsKICAgIF9zcGVha1RpbWVzdGFtcHMuYWRkKG5vdyk7CgogICAgYXdhaXQgX2ZsdXR0ZXJUdHMuc3BlYWsobWVzc2FnZSk7CiAgfQoKICBGdXR1cmU8dm9pZD4gc3RvcCgpIGFzeW5jIHsKICAgIGlmIChfaW5pdGlhbGl6ZWQpIHsKICAgICAgYXdhaXQgX2ZsdXR0ZXJUdHMuc3RvcCgpOwogICAgfQogIH0KCiAgdm9pZCBkaXNwb3NlKCkgewogICAgX2ZsdXR0ZXJUdHMuc3RvcCgpOwogIH0KfQo=
+import 'package:flutter_tts/flutter_tts.dart';
+import 'dart:async';
+
+class VoiceCoachService {
+  late FlutterTts _flutterTts;
+  bool _initialized = false;
+
+  // 防抖动：记录每种消息的最后播报时间
+  final Map<String, DateTime> _lastSpeakMap = {};
+
+  // 每分钟最多 8 条
+  final List<DateTime> _speakTimestamps = [];
+  static const int _maxPerMinute = 8;
+  static const Duration _debounceSameMessage = Duration(seconds: 5);
+
+  Future<void> initialize() async {
+    _flutterTts = FlutterTts();
+    await _flutterTts.setLanguage("zh-CN");
+    await _flutterTts.setSpeechRate(0.55);
+    await _flutterTts.setPitch(1.0);
+    await _flutterTts.setVolume(0.9);
+    _initialized = true;
+  }
+
+  /// 播报反馈消息，带防抖动和频率限制
+  Future<void> speakFeedback(String message) async {
+    if (!_initialized) return;
+
+    final now = DateTime.now();
+
+    // 防抖动：同一种消息至少间隔 5 秒
+    if (_lastSpeakMap.containsKey(message)) {
+      if (now.difference(_lastSpeakMap[message]!) < _debounceSameMessage) {
+        return;
+      }
+    }
+
+    // 每分钟上限检查
+    _speakTimestamps.removeWhere(
+      (t) => now.difference(t) > const Duration(minutes: 1),
+    );
+    if (_speakTimestamps.length >= _maxPerMinute) return;
+
+    _lastSpeakMap[message] = now;
+    _speakTimestamps.add(now);
+
+    await _flutterTts.speak(message);
+  }
+
+  Future<void> stop() async {
+    if (_initialized) {
+      await _flutterTts.stop();
+    }
+  }
+
+  void dispose() {
+    _flutterTts.stop();
+  }
+}
