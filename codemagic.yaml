@@ -6,7 +6,7 @@ workflows:
     environment:
       flutter: stable
       vars:
-        PACKAGE_NAME: "com.livephotoguide.app"
+        PACKAGE_NAME: com.livephotoguide.app
     scripts:
       - name: Get Flutter packages
         script: flutter pub get
@@ -17,4 +17,4 @@ workflows:
     publishing:
       email:
         recipients:
-          - your-email@example.com
+          - 2254358579@qq.com
