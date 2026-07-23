@@ -1,1 +1,64 @@
--b aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAnY2FtZXJhX3BhZ2UuZGFydCc7CgpjbGFzcyBIb21lUGFnZSBleHRlbmRzIFN0YXRlbGVzc1dpZGdldCB7CiAgY29uc3QgSG9tZVBhZ2Uoe3N1cGVyLmtleX0pOwoKICBAb3ZlcnJpZGUKICBXaWRnZXQgYnVpbGQoQnVpbGRDb250ZXh0IGNvbnRleHQpIHsKICAgIHJldHVybiBTY2FmZm9sZCgKICAgICAgYmFja2dyb3VuZENvbG9yOiBDb2xvcnMuYmxhY2ssCiAgICAgIGJvZHk6IENlbnRlcigKICAgICAgICBjaGlsZDogQ29sdW1uKAogICAgICAgICAgbWFpbkF4aXNTaXplOiBNYWluQXhpc1NpemUubWluLAogICAgICAgICAgY2hpbGRyZW46IFsKICAgICAgICAgICAgY29uc3QgVGV4dCgKICAgICAgICAgICAgICAn5pGE5b2x5aSn5biIJywKICAgICAgICAgICAgICBzdHlsZTogVGV4dFN0eWxlKAogICAgICAgICAgICAgICAgY29sb3I6IENvbG9ycy53aGl0ZSwKICAgICAgICAgICAgICAgIGZvbnRTaXplOiA0MiwKICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IEZvbnRXZWlnaHQuYm9sZCwKICAgICAgICAgICAgICAgIGxldHRlclNwYWNpbmc6IDYsCiAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgKSwKICAgICAgICAgICAgY29uc3QgU2l6ZWRCb3goaGVpZ2h0OiAxMiksCiAgICAgICAgICAgIGNvbnN0IFRleHQoCiAgICAgICAgICAgICAgJ0FJIOWunuaXtuaRhOW9seaMh+WvvCcsCiAgICAgICAgICAgICAgc3R5bGU6IFRleHRTdHlsZSgKICAgICAgICAgICAgICAgIGNvbG9yOiBDb2xvcnMud2hpdGU1NCwKICAgICAgICAgICAgICAgIGZvbnRTaXplOiAxOCwKICAgICAgICAgICAgICAgIGxldHRlclNwYWNpbmc6IDQsCiAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgKSwKICAgICAgICAgICAgY29uc3QgU2l6ZWRCb3goaGVpZ2h0OiA2NCksCiAgICAgICAgICAgIEdlc3R1cmVEZXRlY3RvcigKICAgICAgICAgICAgICBvblRhcDogKCkgewogICAgICAgICAgICAgICAgTmF2aWdhdG9yLnB1c2hOYW1lZChjb250ZXh0LCAnL2NhbWVyYScpOwogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgY2hpbGQ6IENvbnRhaW5lcigKICAgICAgICAgICAgICAgIHBhZGRpbmc6IGNvbnN0IEVkZ2VJbnNldHMuc3ltbWV0cmljKAogICAgICAgICAgICAgICAgICBob3Jpem9udGFsOiA0OCwKICAgICAgICAgICAgICAgICAgdmVydGljYWw6IDE2LAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgIGRlY29yYXRpb246IEJveERlY29yYXRpb24oCiAgICAgICAgICAgICAgICAgIGJvcmRlclJhZGl1czogQm9yZGVyUmFkaXVzLmNpcmN1bGFyKDMyKSwKICAgICAgICAgICAgICAgICAgYm9yZGVyOiBCb3JkZXIuYWxsKGNvbG9yOiBDb2xvcnMud2hpdGUsIHdpZHRoOiAxLjUpLAogICAgICAgICAgICAgICAgICBjb2xvcjogQ29sb3JzLndoaXRlLndpdGhPcGFjaXR5KDAuMDgpLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgIGNoaWxkOiBjb25zdCBUZXh0KAogICAgICAgICAgICAgICAgICAn5byA5aeL5ouN5pGEJywKICAgICAgICAgICAgICAgICAgc3R5bGU6IFRleHRTdHlsZSgKICAgICAgICAgICAgICAgICAgICBjb2xvcjogQ29sb3JzLndoaXRlLAogICAgICAgICAgICAgICAgICAgIGZvbnRTaXplOiAyMiwKICAgICAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiBGb250V2VpZ2h0Lnc1MDAsCiAgICAgICAgICAgICAgICAgICAgbGV0dGVyU3BhY2luZzogNCwKICAgICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgKSwKICAgICAgICAgIF0sCiAgICAgICAgKSwKICAgICAgKSwKICAgICk7CiAgfQp9Cg==
+import 'package:flutter/material.dart';
+import 'camera_page.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text(
+              '摄影大师',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 42,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 6,
+              ),
+            ),
+            const SizedBox(height: 12),
+            const Text(
+              'AI 实时摄影指导',
+              style: TextStyle(
+                color: Colors.white54,
+                fontSize: 18,
+                letterSpacing: 4,
+              ),
+            ),
+            const SizedBox(height: 64),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/camera');
+              },
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 48,
+                  vertical: 16,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(32),
+                  border: Border.all(color: Colors.white, width: 1.5),
+                  color: Colors.white.withOpacity(0.08),
+                ),
+                child: const Text(
+                  '开始拍摄',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 22,
+                    fontWeight: FontWeight.w500,
+                    letterSpacing: 4,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
