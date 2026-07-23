@@ -1,0 +1,20 @@
+# codemagic.yaml
+workflows:
+  build-android-apk:
+    name: Build Android APK
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      vars:
+        PACKAGE_NAME: "com.livephotoguide.app"
+    scripts:
+      - name: Get Flutter packages
+        script: flutter pub get
+      - name: Build APK
+        script: flutter build apk --release --target-platform=android-arm64
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
+    publishing:
+      email:
+        recipients:
+          - your-email@example.com
