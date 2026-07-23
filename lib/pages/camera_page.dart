@@ -1,1 +1,247 @@
--b aW1wb3J0ICdwYWNrYWdlOmZsdXR0ZXIvbWF0ZXJpYWwuZGFydCc7CmltcG9ydCAncGFja2FnZTpjYW1lcmEvY2FtZXJhLmRhcnQnOwppbXBvcnQgJ3BhY2thZ2U6Z29vZ2xlX21sa2l0X3Bvc2VfZGV0ZWN0aW9uL2dvb2dsZV9tbGtpdF9wb3NlX2RldGVjdGlvbi5kYXJ0JzsKaW1wb3J0ICdwYWNrYWdlOnBlcm1pc3Npb25faGFuZGxlci9wZXJtaXNzaW9uX2hhbmRsZXIuZGFydCc7CmltcG9ydCAncGFja2FnZTpsaXZlX3Bob3RvX2d1aWRlL3NlcnZpY2VzL3ZvaWNlX2NvYWNoX3NlcnZpY2UuZGFydCc7CmltcG9ydCAncGFja2FnZTpsaXZlX3Bob3RvX2d1aWRlL3NlcnZpY2VzL3Bvc2VfYW5hbHl6ZXIuZGFydCc7CmltcG9ydCAnZGFydDphc3luYyc7CmltcG9ydCAnZGFydDp0eXBlZF9kYXRhJzsKCmNsYXNzIENhbWVyYVBhZ2UgZXh0ZW5kcyBTdGF0ZWZ1bFdpZGdldCB7CiAgY29uc3QgQ2FtZXJhUGFnZSh7c3VwZXIua2V5fSk7CgogIEBvdmVycmlkZQogIFN0YXRlPENhbWVyYVBhZ2U+IGNyZWF0ZVN0YXRlKCkgPT4gX0NhbWVyYVBhZ2VTdGF0ZSgpOwp9CgpjbGFzcyBfQ2FtZXJhUGFnZVN0YXRlIGV4dGVuZHMgU3RhdGU8Q2FtZXJhUGFnZT4gd2l0aCBXaWRnZXRzQmluZGluZ09ic2VydmVyIHsKICBDYW1lcmFDb250cm9sbGVyPyBfY29udHJvbGxlcjsKICBQb3NlRGV0ZWN0b3I/IF9wb3NlRGV0ZWN0b3I7CiAgYm9vbCBfaXNJbml0aWFsaXplZCA9IGZhbHNlOwogIGJvb2wgX2lzQW5hbHl6aW5nID0gZmFsc2U7CgogIGZpbmFsIFZvaWNlQ29hY2hTZXJ2aWNlIF92b2ljZUNvYWNoID0gVm9pY2VDb2FjaFNlcnZpY2UoKTsKICBmaW5hbCBQb3NlQW5hbHl6ZXIgX3Bvc2VBbmFseXplciA9IFBvc2VBbmFseXplcigpOwoKICBTdHJpbmcgX3N1Z2dlc3Rpb24gPSAnJzsKICBib29sIF9pc1BlcmZlY3QgPSBmYWxzZTsKCiAgVGltZXI/IF9mcmFtZVRpbWVyOwoKICAvLyDlroznvo7luKforqHmlbDlmagKICBpbnQgX3BlcmZlY3RGcmFtZUNvdW50ID0gMDsKICBzdGF0aWMgY29uc3QgaW50IF9wZXJmZWN0RnJhbWVUcmlnZ2VyID0gMjsgLy8g6L+e57utMuW4p++8iOavj+W4p+e6pjHnp5LvvIk9IDLnp5IKICBib29sIF9wZXJmZWN0U2VxdWVuY2VUcmlnZ2VyZWQgPSBmYWxzZTsKCiAgQG92ZXJyaWRlCiAgdm9pZCBpbml0U3RhdGUoKSB7CiAgICBzdXBlci5pbml0U3RhdGUoKTsKICAgIFdpZGdldHNCaW5kaW5nLmluc3RhbmNlLmFkZE9ic2VydmVyKHRoaXMpOwogICAgX2luaXRBbGwoKTsKICB9CgogIEZ1dHVyZTx2b2lkPiBfaW5pdEFsbCgpIGFzeW5jIHsKICAgIGF3YWl0IF92b2ljZUNvYWNoLmluaXRpYWxpemUoKTsKICAgIF9wb3NlRGV0ZWN0b3IgPSBQb3NlRGV0ZWN0b3IoCiAgICAgIG9wdGlvbnM6IFBvc2VEZXRlY3Rvck9wdGlvbnMoCiAgICAgICAgbW9kZTogUG9zZURldGVjdGlvbk1vZGUuc3RyZWFtLAogICAgICAgIG1vZGVsOiBQb3NlRGV0ZWN0aW9uTW9kZWwuYmFzZSwKICAgICAgKSwKICAgICk7CiAgICBhd2FpdCBfaW5pdENhbWVyYSgpOwogIH0KCiAgRnV0dXJlPHZvaWQ+IF9pbml0Q2FtZXJhKCkgYXN5bmMgewogICAgZmluYWwgc3RhdHVzID0gYXdhaXQgUGVybWlzc2lvbi5jYW1lcmEucmVxdWVzdCgpOwogICAgaWYgKCFzdGF0dXMuaXNHcmFudGVkKSB7CiAgICAgIGlmIChtb3VudGVkKSB7CiAgICAgICAgc2V0U3RhdGUoKCkgPT4gX3N1Z2dlc3Rpb24gPSAn6ZyA6KaB55u45py65p2D6ZmQJyk7CiAgICAgIH0KICAgICAgcmV0dXJuOwogICAgfQogICAgZmluYWwgY2FtZXJhcyA9IGF3YWl0IGF2YWlsYWJsZUNhbWVyYXMoKTsKICAgIGZpbmFsIGJhY2sgPSBjYW1lcmFzLmZpcnN0V2hlcmUoCiAgICAgIChjKSA9PiBjLmxlbnNEaXJlY3Rpb24gPT0gQ2FtZXJhTGVuc0RpcmVjdGlvbi5iYWNrLAogICAgICBvckVsc2U6ICgpID0+IGNhbWVyYXMuZmlyc3QsCiAgICApOwogICAgX2NvbnRyb2xsZXIgPSBDYW1lcmFDb250cm9sbGVyKAogICAgICBiYWNrLAogICAgICBSZXNvbHV0aW9uUHJlc2V0Lm1lZGl1bSwKICAgICAgZW5hYmxlQXVkaW86IGZhbHNlLAogICAgICBpbWFnZUZvcm1hdEdyb3VwOiBJbWFnZUZvcm1hdEdyb3VwLnl1djQyMCwKICAgICk7CiAgICBhd2FpdCBfY29udHJvbGxlciEuaW5pdGlhbGl6ZSgpOwogICAgaWYgKCFtb3VudGVkKSByZXR1cm47CiAgICBzZXRTdGF0ZSgoKSA9PiBfaXNJbml0aWFsaXplZCA9IHRydWUpOwoKICAgIF9mcmFtZVRpbWVyID0gVGltZXIucGVyaW9kaWMoY29uc3QgRHVyYXRpb24oc2Vjb25kczogMSksIChfKSB7CiAgICAgIF9jYXB0dXJlQW5kQW5hbHl6ZSgpOwogICAgfSk7CiAgfQoKICBGdXR1cmU8dm9pZD4gX2NhcHR1cmVBbmRBbmFseXplKCkgYXN5bmMgewogICAgaWYgKF9pc0FuYWx5emluZyB8fCBfY29udHJvbGxlciA9PSBudWxsIHx8ICFfY29udHJvbGxlciEudmFsdWUuaXNJbml0aWFsaXplZCkgewogICAgICByZXR1cm47CiAgICB9CiAgICBfaXNBbmFseXppbmcgPSB0cnVlOwogICAgdHJ5IHsKICAgICAgZmluYWwgaW1hZ2UgPSBhd2FpdCBfY29udHJvbGxlciEudGFrZVBpY3R1cmUoKTsKICAgICAgZmluYWwgYnl0ZXMgPSBhd2FpdCBpbWFnZS5yZWFkQXNCeXRlcygpOwogICAgICBmaW5hbCBpbnB1dEltYWdlID0gSW5wdXRJbWFnZS5mcm9tQnl0ZXMoCiAgICAgICAgYnl0ZXM6IGJ5dGVzLAogICAgICAgIG1ldGFkYXRhOiBJbnB1dEltYWdlTWV0YWRhdGEoCiAgICAgICAgICBzaXplOiBfY29udHJvbGxlciEudmFsdWUucHJldmlld1NpemUhLAogICAgICAgICAgcm90YXRpb246IElucHV0SW1hZ2VSb3RhdGlvbi5yb3RhdGlvbjBkZWcsCiAgICAgICAgICBmb3JtYXQ6IElucHV0SW1hZ2VGb3JtYXQueXV2NDIwLAogICAgICAgICAgYnl0ZXNQZXJSb3c6IDAsCiAgICAgICAgKSwKICAgICAgKTsKICAgICAgZmluYWwgcG9zZXMgPSBhd2FpdCBfcG9zZURldGVjdG9yIS5wcm9jZXNzSW1hZ2UoaW5wdXRJbWFnZSk7CiAgICAgIGlmIChwb3Nlcy5pc05vdEVtcHR5KSB7CiAgICAgICAgZmluYWwgcG9zZSA9IHBvc2VzLmZpcnN0OwogICAgICAgIGZpbmFsIHJlc3VsdCA9IF9wb3NlQW5hbHl6ZXIuYW5hbHl6ZSgKICAgICAgICAgIHBvc2UsCiAgICAgICAgICBfY29udHJvbGxlciEudmFsdWUucHJldmlld1NpemUhLndpZHRoLAogICAgICAgICAgX2NvbnRyb2xsZXIhLnZhbHVlLnByZXZpZXdTaXplIS5oZWlnaHQsCiAgICAgICAgKTsKCiAgICAgICAgaWYgKHJlc3VsdC5pc1BlcmZlY3QpIHsKICAgICAgICAgIF9wZXJmZWN0RnJhbWVDb3VudCsrOwogICAgICAgICAgaWYgKF9wZXJmZWN0RnJhbWVDb3VudCA+PSBfcGVyZmVjdEZyYW1lVHJpZ2dlciAmJgogICAgICAgICAgICAgICFfcGVyZmVjdFNlcXVlbmNlVHJpZ2dlcmVkKSB7CiAgICAgICAgICAgIF9wZXJmZWN0U2VxdWVuY2VUcmlnZ2VyZWQgPSB0cnVlOwogICAgICAgICAgICBfdm9pY2VDb2FjaC5zcGVha0ZlZWRiYWNrKAogICAgICAgICAgICAgICfnirbmgIHpnZ7luLjlpb3vvIHkv53mjIHov5nkuKrnnLznpZ7vvIzlh4blpIfmipPmi43igKbigKYz44CBMuOAgTHvvIEnLAogICAgICAgICAgICApOwogICAgICAgICAgfQogICAgICAgICAgaWYgKG1vdW50ZWQpIHsKICAgICAgICAgICAgc2V0U3RhdGUoKCkgewogICAgICAgICAgICAgIF9pc1BlcmZlY3QgPSB0cnVlOwogICAgICAgICAgICAgIF9zdWdnZXN0aW9uID0gJ+WujOe+jic7CiAgICAgICAgICAgIH0pOwogICAgICAgICAgfQogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICBfcGVyZmVjdEZyYW1lQ291bnQgPSAwOwogICAgICAgICAgX3BlcmZlY3RTZXF1ZW5jZVRyaWdnZXJlZCA9IGZhbHNlOwogICAgICAgICAgaWYgKHJlc3VsdC5zdWdnZXN0aW9uICE9IG51bGwpIHsKICAgICAgICAgICAgX3ZvaWNlQ29hY2guc3BlYWtGZWVkYmFjayhyZXN1bHQuc3VnZ2VzdGlvbiEpOwogICAgICAgICAgICBpZiAobW91bnRlZCkgewogICAgICAgICAgICAgIHNldFN0YXRlKCgpIHsKICAgICAgICAgICAgICAgIF9pc1BlcmZlY3QgPSBmYWxzZTsKICAgICAgICAgICAgICAgIF9zdWdnZXN0aW9uID0gcmVzdWx0LnN1Z2dlc3Rpb24hOwogICAgICAgICAgICAgIH0pOwogICAgICAgICAgICB9CiAgICAgICAgICB9CiAgICAgICAgfQogICAgICB9CiAgICB9IGNhdGNoIChfKSB7fQogICAgX2lzQW5hbHl6aW5nID0gZmFsc2U7CiAgfQoKICBAb3ZlcnJpZGUKICB2b2lkIGRpZENoYW5nZUFwcExpZmVjeWNsZVN0YXRlKEFwcExpZmVjeWNsZVN0YXRlIHN0YXRlKSB7CiAgICBpZiAoc3RhdGUgPT0gQXBwTGlmZWN5Y2xlU3RhdGUucGF1c2VkKSB7CiAgICAgIF9mcmFtZVRpbWVyPy5jYW5jZWwoKTsKICAgICAgX2NvbnRyb2xsZXI/LmRpc3Bvc2UoKTsKICAgICAgX2NvbnRyb2xsZXIgPSBudWxsOwogICAgfSBlbHNlIGlmIChzdGF0ZSA9PSBBcHBMaWZlY3ljbGVTdGF0ZS5yZXN1bWVkKSB7CiAgICAgIF9pbml0Q2FtZXJhKCk7CiAgICB9CiAgfQoKICBAb3ZlcnJpZGUKICBXaWRnZXQgYnVpbGQoQnVpbGRDb250ZXh0IGNvbnRleHQpIHsKICAgIGlmICghX2lzSW5pdGlhbGl6ZWQpIHsKICAgICAgcmV0dXJuIGNvbnN0IFNjYWZmb2xkKAogICAgICAgIGJhY2tncm91bmRDb2xvcjogQ29sb3JzLmJsYWNrLAogICAgICAgIGJvZHk6IENlbnRlcigKICAgICAgICAgIGNoaWxkOiBDb2x1bW4oCiAgICAgICAgICAgIG1haW5BeGlzU2l6ZTogTWFpbkF4aXNTaXplLm1pbiwKICAgICAgICAgICAgY2hpbGRyZW46IFsKICAgICAgICAgICAgICBDaXJjdWxhclByb2dyZXNzSW5kaWNhdG9yKGNvbG9yOiBDb2xvcnMud2hpdGUpLAogICAgICAgICAgICAgIFNpemVkQm94KGhlaWdodDogMTYpLAogICAgICAgICAgICAgIFRleHQoJ+ato+WcqOWQr+WKqOebuOacui4uLicsIHN0eWxlOiBUZXh0U3R5bGUoY29sb3I6IENvbG9ycy53aGl0ZTcwKSksCiAgICAgICAgICAgIF0sCiAgICAgICAgICApLAogICAgICAgICksCiAgICAgICk7CiAgICB9CiAgICByZXR1cm4gU2NhZmZvbGQoCiAgICAgIGJhY2tncm91bmRDb2xvcjogQ29sb3JzLmJsYWNrLAogICAgICBib2R5OiBTdGFjaygKICAgICAgICBmaXQ6IFN0YWNrRml0LmV4cGFuZCwKICAgICAgICBjaGlsZHJlbjogWwogICAgICAgICAgQ2FtZXJhUHJldmlldyhfY29udHJvbGxlciEpLAogICAgICAgICAgLy8g6aG26YOo5riQ5Y+Y6YGu572pCiAgICAgICAgICBQb3NpdGlvbmVkKAogICAgICAgICAgICB0b3A6IDAsCiAgICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgICBoZWlnaHQ6IDYwLAogICAgICAgICAgICBjaGlsZDogQ29udGFpbmVyKAogICAgICAgICAgICAgIGRlY29yYXRpb246IGNvbnN0IEJveERlY29yYXRpb24oCiAgICAgICAgICAgICAgICBncmFkaWVudDogTGluZWFyR3JhZGllbnQoCiAgICAgICAgICAgICAgICAgIGJlZ2luOiBBbGlnbm1lbnQudG9wQ2VudGVyLAogICAgICAgICAgICAgICAgICBlbmQ6IEFsaWdubWVudC5ib3R0b21DZW50ZXIsCiAgICAgICAgICAgICAgICAgIGNvbG9yczogW0NvbG9ycy5ibGFjazQ1LCBDb2xvcnMudHJhbnNwYXJlbnRdLAogICAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgICApLAogICAgICAgICAgICApLAogICAgICAgICAgKSwKICAgICAgICAgIC8vIOW6lemDqOaoquW5heaPkOekugogICAgICAgICAgaWYgKF9zdWdnZXN0aW9uLmlzTm90RW1wdHkpCiAgICAgICAgICAgIFBvc2l0aW9uZWQoCiAgICAgICAgICAgICAgYm90dG9tOiAxNDAsCiAgICAgICAgICAgICAgbGVmdDogMjQsCiAgICAgICAgICAgICAgcmlnaHQ6IDI0LAogICAgICAgICAgICAgIGNoaWxkOiBDb250YWluZXIoCiAgICAgICAgICAgICAgICBwYWRkaW5nOgogICAgICAgICAgICAgICAgICAgIGNvbnN0IEVkZ2VJbnNldHMuc3ltbWV0cmljKGhvcml6b250YWw6IDI0LCB2ZXJ0aWNhbDogMTQpLAogICAgICAgICAgICAgICAgZGVjb3JhdGlvbjogQm94RGVjb3JhdGlvbigKICAgICAgICAgICAgICAgICAgY29sb3I6IENvbG9ycy5ibGFjay53aXRoT3BhY2l0eSgwLjY1KSwKICAgICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiBCb3JkZXJSYWRpdXMuY2lyY3VsYXIoMjApLAogICAgICAgICAgICAgICAgICBib3JkZXI6IEJvcmRlci5hbGwoY29sb3I6IENvbG9ycy53aGl0ZS53aXRoT3BhY2l0eSgwLjE1KSksCiAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgY2hpbGQ6IFRleHQoCiAgICAgICAgICAgICAgICAgIF9zdWdnZXN0aW9uLAogICAgICAgICAgICAgICAgICBzdHlsZTogY29uc3QgVGV4dFN0eWxlKAogICAgICAgICAgICAgICAgICAgIGNvbG9yOiBDb2xvcnMud2hpdGUsCiAgICAgICAgICAgICAgICAgICAgZm9udFNpemU6IDIyLAogICAgICAgICAgICAgICAgICAgIGZvbnRXZWlnaHQ6IEZvbnRXZWlnaHQudzUwMCwKICAgICAgICAgICAgICAgICAgICBsZXR0ZXJTcGFjaW5nOiAyLAogICAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICAgICB0ZXh0QWxpZ246IFRleHRBbGlnbi5jZW50ZXIsCiAgICAgICAgICAgICAgICApLAogICAgICAgICAgICAgICksCiAgICAgICAgICAgICksCiAgICAgICAgICAvLyDlupXpg6jlv6vpl6joo4XppbAKICAgICAgICAgIFBvc2l0aW9uZWQoCiAgICAgICAgICAgIGJvdHRvbTogNDgsCiAgICAgICAgICAgIGxlZnQ6IDAsCiAgICAgICAgICAgIHJpZ2h0OiAwLAogICAgICAgICAgICBjaGlsZDogQ2VudGVyKAogICAgICAgICAgICAgIGNoaWxkOiBDb250YWluZXIoCiAgICAgICAgICAgICAgICB3aWR0aDogNzIsCiAgICAgICAgICAgICAgICBoZWlnaHQ6IDcyLAogICAgICAgICAgICAgICAgZGVjb3JhdGlvbjogQm94RGVjb3JhdGlvbigKICAgICAgICAgICAgICAgICAgc2hhcGU6IEJveFNoYXBlLmNpcmNsZSwKICAgICAgICAgICAgICAgICAgYm9yZGVyOiBCb3JkZXIuYWxsKGNvbG9yOiBDb2xvcnMud2hpdGUsIHdpZHRoOiA0KSwKICAgICAgICAgICAgICAgICksCiAgICAgICAgICAgICAgKSwKICAgICAgICAgICAgKSwKICAgICAgICAgICksCiAgICAgICAgXSwKICAgICAgKSwKICAgICk7CiAgfQoKICBAb3ZlcnJpZGUKICB2b2lkIGRpc3Bvc2UoKSB7CiAgICBXaWRnZXRzQmluZGluZy5pbnN0YW5jZS5yZW1vdmVPYnNlcnZlcih0aGlzKTsKICAgIF9mcmFtZVRpbWVyPy5jYW5jZWwoKTsKICAgIF9jb250cm9sbGVyPy5kaXNwb3NlKCk7CiAgICBfcG9zZURldGVjdG9yPy5jbG9zZSgpOwogICAgX3ZvaWNlQ29hY2guZGlzcG9zZSgpOwogICAgc3VwZXIuZGlzcG9zZSgpOwogIH0KfQo=
+import 'package:flutter/material.dart';
+import 'package:camera/camera.dart';
+import 'package:google_mlkit_pose_detection/google_mlkit_pose_detection.dart';
+import 'package:permission_handler/permission_handler.dart';
+import 'package:live_photo_guide/services/voice_coach_service.dart';
+import 'package:live_photo_guide/services/pose_analyzer.dart';
+import 'dart:async';
+import 'dart:typed_data';
+
+class CameraPage extends StatefulWidget {
+  const CameraPage({super.key});
+
+  @override
+  State<CameraPage> createState() => _CameraPageState();
+}
+
+class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
+  CameraController? _controller;
+  PoseDetector? _poseDetector;
+  bool _isInitialized = false;
+  bool _isAnalyzing = false;
+
+  final VoiceCoachService _voiceCoach = VoiceCoachService();
+  final PoseAnalyzer _poseAnalyzer = PoseAnalyzer();
+
+  String _suggestion = '';
+  bool _isPerfect = false;
+
+  Timer? _frameTimer;
+
+  // 完美帧计数器
+  int _perfectFrameCount = 0;
+  static const int _perfectFrameTrigger = 2; // 连续2帧（每帧约1秒）= 2秒
+  bool _perfectSequenceTriggered = false;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    _initAll();
+  }
+
+  Future<void> _initAll() async {
+    await _voiceCoach.initialize();
+    _poseDetector = PoseDetector(
+      options: PoseDetectorOptions(
+        mode: PoseDetectionMode.stream,
+        model: PoseDetectionModel.base,
+      ),
+    );
+    await _initCamera();
+  }
+
+  Future<void> _initCamera() async {
+    final status = await Permission.camera.request();
+    if (!status.isGranted) {
+      if (mounted) {
+        setState(() => _suggestion = '需要相机权限');
+      }
+      return;
+    }
+    final cameras = await availableCameras();
+    final back = cameras.firstWhere(
+      (c) => c.lensDirection == CameraLensDirection.back,
+      orElse: () => cameras.first,
+    );
+    _controller = CameraController(
+      back,
+      ResolutionPreset.medium,
+      enableAudio: false,
+      imageFormatGroup: ImageFormatGroup.yuv420,
+    );
+    await _controller!.initialize();
+    if (!mounted) return;
+    setState(() => _isInitialized = true);
+
+    _frameTimer = Timer.periodic(const Duration(seconds: 1), (_) {
+      _captureAndAnalyze();
+    });
+  }
+
+  Future<void> _captureAndAnalyze() async {
+    if (_isAnalyzing || _controller == null || !_controller!.value.isInitialized) {
+      return;
+    }
+    _isAnalyzing = true;
+    try {
+      final image = await _controller!.takePicture();
+      final bytes = await image.readAsBytes();
+      final inputImage = InputImage.fromBytes(
+        bytes: bytes,
+        metadata: InputImageMetadata(
+          size: _controller!.value.previewSize!,
+          rotation: InputImageRotation.rotation0deg,
+          format: InputImageFormat.yuv420,
+          bytesPerRow: 0,
+        ),
+      );
+      final poses = await _poseDetector!.processImage(inputImage);
+      if (poses.isNotEmpty) {
+        final pose = poses.first;
+        final result = _poseAnalyzer.analyze(
+          pose,
+          _controller!.value.previewSize!.width,
+          _controller!.value.previewSize!.height,
+        );
+
+        if (result.isPerfect) {
+          _perfectFrameCount++;
+          if (_perfectFrameCount >= _perfectFrameTrigger &&
+              !_perfectSequenceTriggered) {
+            _perfectSequenceTriggered = true;
+            _voiceCoach.speakFeedback(
+              '状态非常好！保持这个眼神，准备抓拍……3、2、1！',
+            );
+          }
+          if (mounted) {
+            setState(() {
+              _isPerfect = true;
+              _suggestion = '完美';
+            });
+          }
+        } else {
+          _perfectFrameCount = 0;
+          _perfectSequenceTriggered = false;
+          if (result.suggestion != null) {
+            _voiceCoach.speakFeedback(result.suggestion!);
+            if (mounted) {
+              setState(() {
+                _isPerfect = false;
+                _suggestion = result.suggestion!;
+              });
+            }
+          }
+        }
+      }
+    } catch (_) {}
+    _isAnalyzing = false;
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused) {
+      _frameTimer?.cancel();
+      _controller?.dispose();
+      _controller = null;
+    } else if (state == AppLifecycleState.resumed) {
+      _initCamera();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (!_isInitialized) {
+      return const Scaffold(
+        backgroundColor: Colors.black,
+        body: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              CircularProgressIndicator(color: Colors.white),
+              SizedBox(height: 16),
+              Text('正在启动相机...', style: TextStyle(color: Colors.white70)),
+            ],
+          ),
+        ),
+      );
+    }
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          CameraPreview(_controller!),
+          // 顶部渐变遮罩
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            height: 60,
+            child: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.black45, Colors.transparent],
+                ),
+              ),
+            ),
+          ),
+          // 底部横幅提示
+          if (_suggestion.isNotEmpty)
+            Positioned(
+              bottom: 140,
+              left: 24,
+              right: 24,
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.65),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: Colors.white.withOpacity(0.15)),
+                ),
+                child: Text(
+                  _suggestion,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 22,
+                    fontWeight: FontWeight.w500,
+                    letterSpacing: 2,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          // 底部快门装饰
+          Positioned(
+            bottom: 48,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Container(
+                width: 72,
+                height: 72,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white, width: 4),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _frameTimer?.cancel();
+    _controller?.dispose();
+    _poseDetector?.close();
+    _voiceCoach.dispose();
+    super.dispose();
+  }
+}
